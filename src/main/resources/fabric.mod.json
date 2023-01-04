@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "angelical",
+  "version": "${version}",
+
+  "name": "Angelical",
+  "description": "Angelical is a mod that adds a brighter, more pleasing looking material that can be used for armor and building.",
+  "authors": [
+    "Octa_NEO"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT License",
+  "icon": "assets/angelical/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.octaneo.angelical.Angelical"
+    ],
+    "client": [
+      "net.octaneo.angelical.AngelicalClient"
+    ]
+  },
+  "mixins": [
+    "angelical.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.11",
+    "fabric-api": "*",
+    "minecraft": "~1.19.3",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
